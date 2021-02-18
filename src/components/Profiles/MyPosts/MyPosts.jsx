@@ -3,8 +3,7 @@ import s from './MyPosts.module.css';
 import Post from "./Post/Post.jsx";
 
 const MyPosts = (props) => {
-    // debugger;
-    let postsElements = props.posts.map(p => <Post message={p.message}/>);
+    let postsElements = props.posts.map(p => <Post message={p.message} like={p.like}/>);
 
     return (
         <div className={s.postsBlock}>
